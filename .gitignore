@@ -1,0 +1,5 @@
+dataset/images/train/*.png
+dataset/images/val/*.png
+
+dataset/labels/train/*.txt
+dataset/labels/val/*.txt
