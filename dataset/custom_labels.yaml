@@ -1,0 +1,15 @@
+
+train: /content/data/images/train
+val: /content/data/images/val
+test:  # test images (optional)
+
+# Classes
+names:
+  0: Persona
+  1: Bicicleta
+  2: Edificio
+  3: Chaza
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
