@@ -1,6 +1,6 @@
 
-train: /content/archive/data/images/train
-val: /content/archive/data/images/val
+train: /content/data/images/train
+val: /content/data/images/val
 test:  # test images (optional)
 
 # Classes
