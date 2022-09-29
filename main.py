@@ -1,4 +1,4 @@
-
+from MovingObjectDetectionYOLOv5.classifier.classifier import moving_object_detection
 
 if __name__ == '__main__':
-    pass
+    moving_object_detection()

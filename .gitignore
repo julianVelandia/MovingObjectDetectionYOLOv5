@@ -3,3 +3,5 @@ dataset/images/val/*.png
 
 dataset/labels/train/*.txt
 dataset/labels/val/*.txt
+
+/classifier/model/best.pt
