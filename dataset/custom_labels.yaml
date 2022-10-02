@@ -5,10 +5,7 @@ test:  # test images (optional)
 
 # Classes
 names:
-  0: Persona
-  1: Bicicleta
-  2: Edificio
-  3: Chaza
+  0: Basura
 
 
 # Download script/URL (optional)

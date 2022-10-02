@@ -6,7 +6,7 @@ import numpy as np
 def moving_object_detection():
     model = torch.hub.load('ultralytics/yolov5', 'custom',
                            path='classifier/model/best.pt')
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
     while True:
         ret, frame = cap.read()
