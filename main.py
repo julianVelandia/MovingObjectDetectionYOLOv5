@@ -1,4 +1,20 @@
-from classifier.classifier import moving_object_detection
+from classifier.classifier import moving_object_detection_video, moving_object_detection_frame
 
 if __name__ == '__main__':
-    moving_object_detection()
+    print('\n Detección de desechos plásticos \n sobre superficies acuáticas mediante \n el uso de inteligencia artificial \n\n'
+          '-------------------------------------\n')
+
+    while True:
+        op = input('Pulse [V] para detectar con video '
+                   '\n Pulse [I] para detectar con imágen'
+                   '\n Pulse [S] para salir')
+
+        if op == 'v' or op == 'V':
+            moving_object_detection_video()
+            break
+        elif op == 'i' or op == 'I':
+            moving_object_detection_frame()
+            break
+        elif op == 's' or op == 'S':
+            print('Salida')
+            break
