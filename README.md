@@ -29,4 +29,4 @@ A [DataSet](https://www.kaggle.com/datasets/juliancamilovelandia/movingobjectdet
 
 Some results obtained are the following
 
-![result 1](https://raw.githubusercontent.com/julianVelandia/MovingObjectDetectionYOLOv5/main/static/results.jpeg)
+![result 1](https://raw.githubusercontent.com/julianVelandia/MovingObjectDetectionYOLOv5/master/static/results.jpeg)
