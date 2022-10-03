@@ -1,12 +1,13 @@
 
 train: /content/data/images/train
 val: /content/data/images/val
-test:  # test images (optional)
+test:  # test static (optional)
 
 # Classes
 names:
   0: Basura
 
+# Aquí se enumeran las etiquetas utilizadas
 
 # Download script/URL (optional)
 download: https://ultralytics.com/assets/coco128.zip
