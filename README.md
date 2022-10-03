@@ -19,6 +19,14 @@ pip install -r requirements.txt
 ```shell
 py main.py
 ```
-
 And follow the instructions for video Detection or image detection
+
+## Dataset
  
+A [DataSet](https://www.kaggle.com/datasets/juliancamilovelandia/movingobjectdetectionyolov5datasetbasura) was created with images taken from a drone in the city of Bogotá, in areas with water tributaries that present garbage, in addition to public images of the same category
+
+## Results
+
+Some results obtained are the following
+
+![result 1](https://raw.githubusercontent.com/julianVelandia/MovingObjectDetectionYOLOv5/main/static/results.jpeg)
