@@ -7,7 +7,7 @@ def moving_object_detection_video():
     model = torch.hub.load('ultralytics/yolov5', 'custom',
                            path='classifier/model/best.pt')
     cap = cv2.VideoCapture(0)
-
+    print('\n Pulse [CTRL+c] para salir\n')
     while True:
         ret, frame = cap.read()
         detect = model(frame)
@@ -27,23 +27,30 @@ def moving_object_detection_frame():
     model = torch.hub.load('ultralytics/yolov5', 'custom',
                            path='classifier/model/best.pt')
     while True:
-        img_name = input('\nDigita [P] para una imagen personalizada \n'
+        menu_option = input('\nDigita [P] para una imagen personalizada \n'
                      'Digita [D] para una imagen por defecto \n')
 
-        if img_name == 'p' or img_name == 'P':
+        if menu_option == 'p' or menu_option == 'P':
+            img_name = input('\nDigita el nombre de la imágen con la extención .PNG o .JPG\n')
             try:
                 frame = cv2.imread('classifier/' + img_name)
-            except Exception as e:
+                detect = model(frame)
+                print('\n Pulse [S] o [CTRL+c] para salir\n')
+
+            except Exception:
                 print('La imágen no se encuentra,\n'
                       ' - Recuerde mover la imágen a la carpeta classifier\n'
                       ' - Recuerde digitar con la extención .PNG o .JPG\n')
+                continue
             break
-        elif img_name == 'd' or img_name == 'D':
+        elif menu_option == 'd' or menu_option == 'D':
             frame = cv2.imread('classifier/DJI_0370.JPG')
+            detect = model(frame)
+            print('\n Pulse [CTRL+c] para salir\n')
+
             break
 
 
-    detect = model(frame)
 
     info = detect.pandas().xyxy[0]
 
